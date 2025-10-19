@@ -62,13 +62,13 @@ def process_face_recognition(
 
 if __name__ == "__main__":
     # Укажите пути к директориям
-    REFERENCE_DIR = "path/to/reference_images"
-    TEST_DIR = "path/to/test_images"
+    REFERENCE_DIR = "ref-1"
+    TEST_DIR = "test-1"
 
     process_face_recognition(
         reference_dir=REFERENCE_DIR,
         test_dir=TEST_DIR,
         block_size=8,
-        num_coefficients=15,
-        threshold=0.85,
+        num_coefficients=24,
+        threshold=0.7,
     )
